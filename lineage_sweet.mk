@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common AICP configurations
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit ANX camera
 $(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
@@ -23,7 +23,7 @@ SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
-PRODUCT_NAME := aicp_sweet
+PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
